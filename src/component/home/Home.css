@@ -1,0 +1,145 @@
+.home-cont-page{
+    background-color: white;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+.home-decoration-left{
+    position: absolute;
+    height: 85vh;
+    width: 20px;
+    background: #33A5F7;
+    border-bottom-right-radius: 20px;
+    top: 0px;
+    left: 0px;
+    
+}
+.home-text-info-cont{
+    width:380px;
+    margin-top:20px;
+}
+.home-container{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex: 1;
+    flex-wrap: wrap-reverse;
+}
+.home-img{
+    height: 300px;
+    object-fit: contain;
+    padding-right: 20px;
+}
+.home-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-text p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 60px;
+}
+.home-black{
+    color: #444444;
+}
+.home-blue{
+    color: #33A5F7;
+}
+.home-div-reality{
+    display: flex;
+    flex-direction: row;
+}
+.home-text-cont{
+    width: 550px;
+}
+.home-text-info{
+    font-size: 18px !important;
+    font-weight: 300 !important;
+}
+.fade-in-image {
+    animation: fadeIn 4s;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+
+.animated {
+    animation-duration:3s;
+    animation-fill-mode: both;
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+
+
+
+@media screen and (max-width: 620px) {
+    .home-img{
+        height: 190px;
+        object-fit: contain;
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+    .home-text-cont{
+        width: 100%;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .home-text p{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 40px;
+    }
+    .home-text-info-cont{
+        width:300px;
+        margin-top:20px;
+    }
+}
+@media screen and (max-width: 435px) {
+    .home-img{
+        height: 160px;
+        object-fit: contain;
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+    .home-text-cont{
+        width: 100%;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .home-text p{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 35px;
+    }
+    .home-text-info-cont{
+        width:300px;
+        margin-top:20px;
+    }
+}

@@ -1,23 +1,34 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter,Switch,Route } from 'react-router-dom';
+import { Navbar } from './component/navbar/Navbar';
+import { Home } from './component/home/Home';
+import { AboutUs } from './component/aboutUs/AboutUs';
+import { TrustUs } from './component/trustUs/TrustUs';
+import { CounterUp } from './component/counterUp/CounterUp';
+import { WhatsappButton } from './component/whatsappButton/WhatsappButton';
+import { Develop } from './component/develop/Develop';
+import { ConstactUs } from './component/contactUs/ConstactUs';
+import { Footer } from './component/footer/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+        <Navbar/>
+        <Switch>
+          <Route exact path="/">
+            <WhatsappButton/>
+            <Home/>
+            <TrustUs/>
+            <AboutUs/>
+            <CounterUp/>
+            <Develop/>
+            <ConstactUs/>
+            <Footer/>
+          </Route>
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }

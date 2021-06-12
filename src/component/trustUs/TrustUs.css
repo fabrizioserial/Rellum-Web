@@ -1,0 +1,21 @@
+.trust-cont{
+    width: 100%;
+    color: white;
+    
+}
+.trust-logo{
+    height: 80px;
+    object-fit: contain;
+    opacity: 0.1;
+}
+
+.trust-slider{
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width: 1070px) {
+    .trust-cont{
+        margin-top: 80px;
+    }
+}

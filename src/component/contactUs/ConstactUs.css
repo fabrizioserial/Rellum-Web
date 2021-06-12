@@ -1,0 +1,106 @@
+.contact-cont-page{
+    min-height: 100vh;
+    background: #EFEFEF;
+    display: flex;
+    flex-direction: row;
+    border-top-width: 15px;
+    border-top-color: #33A5F7;
+    border-top-style: solid;
+    align-items: center;
+    height: 100%;
+}
+.contact-cont-text{
+    flex: 0.5;
+    margin-left: 8%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    min-height: inherit;
+    margin-top: 5%;
+}
+.contact-text-title{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: clamp(30px,10vh,50px)
+}
+.contact-title-cont{
+    display: flex;
+    flex-direction: row;
+    margin-top: -15px;
+}
+.contact-text-text{
+    font-size: 16px;
+    color: #33A5F7;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.contact-cont-form{
+    flex:0.5 ;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.contact-input-text{
+    margin-bottom: 5px;
+    margin-top: 0px;
+    font-weight: 600;
+    color: #444444;
+}
+.contact-cont-input{
+    margin-top: 25px;
+}
+.contact-input-input{
+    width:90%;
+    border-style: none;
+    height: 35px;
+    padding-bottom:5px;
+    padding-top:5px;
+    padding-left:10px;
+    padding-right:10px;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 16px;
+
+}
+.contact-input-input::placeholder{
+    font-family: 'Poppins', sans-serif !important;
+    color: #C5C5C5;
+    font-weight: 600;  
+}
+.contact-input-input:focus{
+    border-style: none;
+    outline: none;
+}
+.contact-input-textarea{
+    width:90%;
+    border-style: none;
+    height: 35px;
+    min-height: 150px;
+    max-height: 150px;
+    padding-bottom:5px;
+    padding-top:5px;
+    padding-left:10px;
+    padding-right:10px;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 16px;
+}
+.contact-input-textarea::placeholder{
+    font-family: 'Poppins', sans-serif !important;
+    color: #C5C5C5;
+    font-weight: 600;  
+}
+.contact-input-textarea:focus{
+    outline: none;
+}
+.contact-input-submit{
+    font-family: 'Poppins', sans-serif !important;
+    width: calc(90% + 20px);
+    height: 45px;
+    background-color: #33A5F7;
+    border: none;
+    font-weight: 600;
+    margin-top: 15px;
+    color: white;
+}

@@ -1,0 +1,119 @@
+.about-cont-page{
+    background: #EFEFEF;
+    height: 100vh;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.about-cont-text{
+    flex: 0.45;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.about-cont-content{
+    flex: 0.55;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.about-content-item{
+    height: 265px;
+    width: 260px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 5px 5px 25px rgba(201, 201, 201, 0.562);
+    cursor: pointer;
+}
+.about-content-holder{
+    width: 204px;
+}
+.hidden{
+    display: none;
+}
+.about-item-img{
+    height: 72px;
+    object-fit: contain;
+}
+.about-item-title{
+    color: #444444;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 20;
+}
+.about-item-text{
+    color: #33A5F7;
+    max-width: 180px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 14px;
+}
+.about-content-item:hover{
+
+    box-shadow: 5px 5px 25px rgba(136, 136, 136, 0.589)
+}
+.about-content-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right:50px;
+}
+.page-section-text{
+    color: #33A5F7;
+    font-weight: 300;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+.about-text{
+    color: #444444;
+    font-size: 45px;
+    margin-top:-10px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+.about-cont-text-holder{
+    margin-top: calc(100vh - 90vh);
+
+}
+
+.fade-in-image {
+    animation: fadeIn 4s;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+
+.animated {
+    animation-duration:3s;
+    animation-fill-mode: both;
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+}
