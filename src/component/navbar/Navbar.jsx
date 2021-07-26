@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import './Navbar.css'
 import { NavbarMobile } from './navbarMobile/NavbarMobile';
-import { NavbarDesktop } from './navbarDesktop/NavbarDesktop';
+import NavbarDesktop from './navbarDesktop/NavbarDesktop';
 
 
 export const Navbar = () => {
@@ -23,9 +23,9 @@ export const Navbar = () => {
         <>
         {
         (width < breakpoint) ?
-        <NavbarMobile width={width}/>
+            <NavbarMobile width={width}/>
         :
-        <NavbarDesktop/>
+            <NavbarDesktop/>
         } 
         </>
        

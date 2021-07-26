@@ -25,6 +25,7 @@
     flex-direction:row;
 }
 .navbar-item{
+    cursor: pointer;
     position:relative;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;

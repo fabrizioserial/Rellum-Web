@@ -1,12 +1,14 @@
 .about-cont-page{
     background: #EFEFEF;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     flex: 1;
     display: flex;
     flex-direction: row;
     padding-bottom: 30px;
     padding-top: 30px;
+    flex-wrap: wrap;
+    min-height: 100vh;
 }
 .about-cont-text{
     flex: 0.45;
@@ -84,7 +86,6 @@
 }
 .about-cont-text-holder{
     margin-top: calc(100vh - 90vh);
-
 }
 
 .fade-in-image {
@@ -116,4 +117,68 @@
 .fadeInUp {
     opacity: 0;
     animation-name: fadeInUp;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .about-cont-page{
+        padding-top: 50px;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+
+    .about-text{
+        font-size: 38px;
+    }
+    .about-cont-text{
+        flex: 0.8;
+        min-width: 100vw;
+    }
+    .about-cont-content{
+        min-width: 100vw;
+    }
+    .about-content-row{
+        margin-right: 0px;
+    }
+    .about-content-item{
+        margin-top: 50px;
+    }
+    .about-cont-text-holder{
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .about-cont-page{
+        padding-top: 50px;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+    .about-content-row{
+        flex-wrap: wrap;
+    }
+    .about-text{
+        font-size: 32px;
+    }
+    .about-cont-text{
+        flex: 0.8;
+        min-width: 100vw;
+    }
+    .about-content-row{
+        margin-right: 0px;
+    }
+    .about-content-item{
+        margin-top: 50px;
+    }
+    .about-cont-text-holder{
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .about-content-item{
+        width: 300px;
+        height:280px;
+    }
 }

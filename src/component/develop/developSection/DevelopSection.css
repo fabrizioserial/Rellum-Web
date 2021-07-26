@@ -36,7 +36,9 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin-top:100px
+    margin-top:100px;
+    flex-wrap: wrap;
+
 }
 .dsection-cont-der{
     margin-top:100px;
@@ -44,6 +46,8 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    flex-wrap: wrap-reverse;
+
 }
 .dsection-text{
     font-size: 17px;
@@ -125,4 +129,59 @@
 .fadeInRight {
     opacity: 0;
     animation-name: fadeInright;
+}
+
+@media screen and (max-width: 900px) {
+
+    .dsection-cont-blue{
+        width: 60%;
+    }
+
+    .dsection-cont{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .dsection-cont{
+        flex-wrap: wrap;
+    }
+    .dsection-text-holder{
+        margin-left: 0px;
+        width: 296px;
+        margin-top: 0px;
+    }
+    .dsection-cont-text{
+        min-width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 250px;
+    }
+    .dsection-text-holder-der{
+        margin-right: 0px;
+        width: max-content;
+        max-width: 296px;
+        margin-top: 0px;
+    }
+    .dsection-cont-text-der{
+        min-width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 20px;
+        height: 260px;
+    }
+    .dsection-title{
+        font-size: 26px;
+    }
+    .dsection-cont-blue{
+        width: 90%;
+    }
+    .dsection-img{
+        margin-right: 10px;
+        height: 240px;
+    }
+    .dsection-cont{
+        margin-top: 30px;
+    }
 }

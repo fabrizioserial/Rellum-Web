@@ -1,23 +1,31 @@
 import React,{useState,useEffect,useRef} from 'react'
 import './CounterUp.css'
-import CountUp,{useCountUp} from 'react-countup'
+import CountUp from 'react-countup'
+import { connect } from 'react-redux'
 
 
-export const CounterUp = () => {
+
+const CounterUp = ({language}) => {
     const reference = useRef(null)
     const [visible,setVisible] = useState(false)
     const [count,setCount] = useState(false)
-    const options = {
-        root:null,
-        rootMargin:"0px",
-        threshold:0.3
-    }
-
+    const [options,setOption] = useState({
+                root:null,
+                rootMargin:"0px",
+                threshold:0.3
+            })
+    const [lang,setLang] = useState(language)
 
     const callbackFunction = (entries)=>{
         const [entry] = entries
         setVisible(entry.isIntersecting)
     }
+
+
+
+    useEffect(()=>{
+        setLang(language)
+    },[language])
 
     useEffect(()=>{
         const observer = new IntersectionObserver(callbackFunction, options)    
@@ -36,15 +44,15 @@ export const CounterUp = () => {
     },[visible])
 
     return (
-        <div ref={reference} className="counter-clients-cont">
+        <div id="projects" ref={reference} className="counter-clients-cont">
             <div className="counter-client-cont-val">
                     <CountUp start={count ? 0 : null} end={20} duration={2} suffix={" +"} redraw={true}>
                         {({ countUpRef }) => (
                                 <span className="counter-clients-text" ref={countUpRef} />
                         )}
                     </CountUp>
-                    <p className="counter-client-label">Proyectos</p>
-                    <p className="counter-client-label">realizados</p>
+                    <p className="counter-client-label">{lang && lang === "EN" ? "Projects": "Proyectos"}</p>
+                    <p className="counter-client-label">{lang && lang === "EN" ? "made" : "realizados"}</p>
             </div>
             <div className="counter-client-cont-val">
                     <CountUp start={count ? 0 : null} end={2} duration={2} redraw={true}>
@@ -52,8 +60,8 @@ export const CounterUp = () => {
                                 <span className="counter-clients-text" ref={countUpRef} />
                         )}
                     </CountUp>
-                    <p className="counter-client-label">Años</p>
-                    <p className="counter-client-label">emprendiendo</p>
+                    <p className="counter-client-label">{lang && lang === "EN" ? "Years": "Años"}</p>
+                    <p className="counter-client-label">{lang && lang === "EN" ? "undertaking":"emprendiendo"}</p>
             </div>
             <div className="counter-client-cont-val">
                     <CountUp start={count ? 0 : null} end={10} duration={2} suffix={" +"} redraw={true}>
@@ -61,9 +69,16 @@ export const CounterUp = () => {
                                 <span className="counter-clients-text" ref={countUpRef} />
                         )}
                     </CountUp>
-                    <p className="counter-client-label">Programadores</p>
-                    <p className="counter-client-label">y diseñadores</p>
+                    <p className="counter-client-label">{lang && lang === "EN" ? "Developers":"Desarrolladores"}</p>
+                    <p className="counter-client-label">{lang && lang === "EN" ? "and designers":"y diseñadores"}</p>
             </div>
         </div>
     )
 }
+const mapStateToProps = (state) => {
+    return {
+        language: state.user_data.language
+    }
+}
+
+export default connect(mapStateToProps)(CounterUp)

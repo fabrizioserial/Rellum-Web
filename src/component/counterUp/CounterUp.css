@@ -32,3 +32,11 @@
     margin-bottom: 30px;
     width: 160px;
 }
+@media screen and (max-width: 600px) {
+    .counter-client-label{
+        font-size: 14px;
+    }
+    .counter-clients-text{
+        font-size: 45px;
+    }
+}
