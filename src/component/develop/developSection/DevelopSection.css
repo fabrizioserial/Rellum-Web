@@ -60,6 +60,7 @@
     font-weight: 600;
     margin-top: 0px;
     margin-bottom: 0px;
+    max-width: 350px;
 }
 .dsection-cont-text{
     height: 350px;
@@ -131,16 +132,37 @@
     animation-name: fadeInright;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 944px) {
 
     .dsection-cont-blue{
-        width: 60%;
+        width: 70%;
     }
 
     .dsection-cont{
         margin-top: 30px;
     }
+    .dsection-cont-text-der{
+        width: 100vw;
+        align-items: center;
+    }
+    .dsection-cont-text{
+        width: 100vw;
+        align-items: center;
+
+    }
+    .dsection-text-holder-der{
+        margin-right: 0px;
+        width: fit-content;
+    }
+    .dsection-text-holder{
+        margin-left: 0px;
+        width: fit-content;
+    }
+    .dsection-cont{
+        flex-wrap: wrap;
+    }
 }
+
 @media screen and (max-width: 600px) {
     .dsection-cont{
         flex-wrap: wrap;
@@ -183,5 +205,10 @@
     }
     .dsection-cont{
         margin-top: 30px;
+    }
+}
+@media screen and (min-width:945px) and (max-width: 1024px) {
+    .dsection-cont-blue{
+        width: 50%;
     }
 }

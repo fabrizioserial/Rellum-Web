@@ -95,11 +95,10 @@
 
 
 
-@media screen and (max-width: 620px) {
+@media screen  and (max-width: 1150px) {
     .home-img{
         height: 190px;
         object-fit: contain;
-        margin-top: 150px;
         margin-bottom: 50px;
     }
     .home-text-cont{
@@ -116,7 +115,21 @@
     }
     .home-text-info-cont{
         width:300px;
-        margin-top:20px;
+    }
+}
+@media screen and (max-width:375px){
+    .home-decoration-left{
+        display: none;
+    }
+}
+@media screen and (max-width: 772px){
+    .home-container{
+        justify-content: center;
+        align-items: baseline;
+    }
+    .home-img{
+
+        margin-bottom: 0px !important;
     }
 }
 @media screen and (max-width: 435px) {
