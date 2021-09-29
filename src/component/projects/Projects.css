@@ -1,0 +1,111 @@
+.projects-div-container{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.projects-div-container-blue{
+    background-color: var(--primary);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+    padding-bottom: 60px;
+    align-items: center;
+}
+.projects-div-text-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project-p-label{
+    color: white;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+.project-p-title{
+    color: white;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 50px;
+}
+.projects-div-container-projects{
+    height: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    position: relative;
+}
+.projects-div-blue{
+    background-color: var(--primary);;
+    display: flex;
+    height: 180px;
+    width: 100vw;
+    position: absolute;
+}
+.project-div-itemscontainer{
+    position: relative;
+    height: 100%;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: center;
+    flex-direction: row;
+    padding: 50px 70px ;
+    align-items: center;
+
+}
+
+.card-div-background{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 28%;
+    margin-bottom: 80px;
+    min-width: 380px;
+}
+
+.card-div-container{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 320px;
+    margin: 10px;
+    max-width: 320px;
+    background-color: white;
+    box-shadow: 2px 2px 15px rgba(110, 110, 110, 0.37);
+    color: #353535;
+    box-sizing: border-box;
+}
+
+.card-div-container:hover{
+    box-shadow: 2px 2px 15px rgba(75, 75, 75, 0.37);
+    cursor:pointer;
+    color: white;
+    background-color: #33A5F7;
+}
+.card-img{
+    height: 290px;
+    object-fit: cover;
+}
+.card-div-textcontainer{
+    padding: 15px 20px;
+    height: 100px;
+    box-sizing: border-box;
+}
+.card-p-title{
+    font-size: 20px;
+    margin: 0px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.card-p-label{
+    margin: 0px;
+    font-size: 13px;
+}

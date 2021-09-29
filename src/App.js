@@ -13,6 +13,7 @@ import Footer from './component/footer/Footer';
 import { Provider } from 'react-redux'
 import store from './redux/store';
 import './variable.css'
+import Projects from "./component/projects/Projects";
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
               <AboutUs/>
               <CounterUp/>
               <Develop/>
+              <Projects/>
               <ConstactUs/>
               <Footer/>
             </Route>

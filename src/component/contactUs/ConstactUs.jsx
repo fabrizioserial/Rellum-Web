@@ -59,7 +59,7 @@ const ConstactUs = ({language}) => {
                 <h1 className="contact-text-title black">{lang && lang === "EN" ? "Tell us what's":"Contanos lo que"}</h1>
                 <div className="contact-title-cont">
                     <h1 className="contact-text-title black">{lang && lang === "EN" ? "on your mind":"piensas"}</h1>
-                    <h1 className="contact-text-title blue">.</h1>
+                    <h1 className="contact-text-title blue" id="dot-contact">.</h1>
                 </div>
                 <p className="contact-text-text">{lang && lang === "EN" ?"And let's start creating your dream":"Y empezaremos a desarrollar tu proyecto"}</p>
                 <p className="contact-text-text">{lang && lang === "EN" ?"project!":"soñado!"}</p>
