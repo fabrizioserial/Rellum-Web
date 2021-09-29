@@ -44,7 +44,7 @@
 .projects-div-blue{
     background-color: var(--primary);;
     display: flex;
-    height: 180px;
+    height: 280px;
     width: 100vw;
     position: absolute;
 }
