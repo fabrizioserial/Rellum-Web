@@ -45,7 +45,7 @@
     background-color: var(--primary);;
     display: flex;
     height: 280px;
-    width: 100vw;
+    width: 100%;
     position: absolute;
 }
 .project-div-itemscontainer{
