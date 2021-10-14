@@ -17,18 +17,18 @@ const Home = ({language}) => {
             <div className="home-container">
                 <div className="home-text">
                     <div className="home-text-cont">
-                        <p className="home-black">{lang && lang === "EN" ? "Make your ideas" : "Hacemos tus ideas"}</p>
+                        <p className="home-black">{lang && lang === "EN" ? "IT solutions" : "Soluciones informáticas"}</p>
                         <div className="home-div-reality">
-                            <p className="home-black">{lang && lang === "EN" ? "reality" : "realidad"}</p><p className="home-blue">.</p>
+                            <p className="home-black">{lang && lang === "EN" ? "for companies" : "para empresas"}</p><p className="home-blue">.</p>
                         </div>
                         <div className="home-text-info-cont" >
                             <p className="home-text-info">{
                             lang && lang === "EN" ? 
-                            `Rellüm will transform your
-                            ideas into robust and powerful
-                            IT solutions.`:
-                            `En Rellüm utilizamos la última
-                            tecnología en software y hardware para llevar a cabo tus proyectos.`}</p>
+                            `We develop custom `:
+                            `Desarrollamos sistemas de `}<span style={{color:"#33A5F7"}}>{lang && lang === "EN" ? "software": "software"}</span> {lang && lang === "EN" ? "and" : "y"} <span style={{color:"#33A5F7"}}>{lang && lang === "EN" ? "hardware": "hardware"}</span>{
+                                lang && lang === "EN" ? 
+                                ` systems with the highest industry standards.`:
+                                ` a medida con los estándares más altos de la industria.`}</p>
                         </div>
                     </div>
 

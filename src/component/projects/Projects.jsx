@@ -62,7 +62,7 @@ const Home = ({language}) => {
             <div className="projects-div-container-blue">
                 <div className="projects-div-text-cont">
                     <p className="project-p-label">{lang && lang === "EN" ? "Projects" : "Proyectos"}</p>
-                    <p className="project-p-title">{lang && lang === "EN" ? "Our jobs" : "Nuestros trabajos"}</p>
+                    <p className="project-p-title">{lang && lang === "EN" ? "Our latest jobs" : "Nuestros últimos trabajos"}</p>
                 </div>
             </div>
             <div className="projects-div-container-projects">

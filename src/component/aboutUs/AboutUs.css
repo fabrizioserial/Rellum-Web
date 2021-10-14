@@ -76,13 +76,13 @@
     margin-top: 0px;
     margin-bottom: 15px;
     font-size: 18px;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
 .about-text{
     color: #444444;
-    font-size: 45px;
+    font-size: 40px;
     margin-top:-10px;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
     font-weight: 600;
 }
 .about-cont-text-holder{

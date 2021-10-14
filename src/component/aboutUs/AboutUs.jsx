@@ -46,10 +46,10 @@ const AboutUs = ({language}) => {
             <div className="about-cont-text">
                 <div className="about-cont-text-holder">
                     <p className="page-section-text">{lang && lang === "EN" ? "Services" : "Servicios"}</p>
-                    <p className="about-text">{lang && lang === "EN" ? "We develop the": "Desarrollamos el "}</p>
-                    <p className="about-text"><span style={{color:"#33A5F7"}}>{lang && lang === "EN" ? "software": "software"}</span> {lang && lang === "EN" ? "and" : "y"} <span style={{color:"#33A5F7"}}>{lang && lang === "EN" ? "hardware": "hardware"}</span></p>
-                    <p className="about-text">{lang && lang === "EN" ? "that your project" : "que requiere tu"}</p>
-                    <p className="about-text">{lang && lang === "EN" ? "requires" : "proyecto"}<span style={{color:"#33A5F7"}}>{"."}</span></p>
+                    <p className="about-text">{lang && lang === "EN" ? "Robust and powerful": "Soluciones integrales"}</p>
+                    <p className="about-text">{lang && lang === "EN" ? "IT solutions built with" : "creadas con las últimas"}</p>
+                    <p className="about-text">{lang && lang === "EN" ?"the latest ":""}<span style={{color:"#33A5F7"}}>{lang && lang === "EN" ? "tools": "herramientas "}</span> {lang && lang === "EN" ? "and" : "y"}<span style={{color:"#33A5F7"}}>{lang && lang === "EN" ? "": " tecnologías"}</span> </p>
+                    <p className="about-text"><span style={{color:"#33A5F7"}}>{lang && lang === "EN" ? "technologies ": ""}</span>{lang && lang === "EN" ? "out there" : "del mercado"}<span style={{color:"#33A5F7"}}>{"."}</span></p>
 
                 </div>
             </div>
@@ -62,7 +62,7 @@ const AboutUs = ({language}) => {
                             <p className="about-item-text">{lang && lang === "EN" ? 
                             `You tell us your idea, with full of details. Rest assured that your idea is safe with us.`:
                             `Nos cuentas tu idea con el mayor detalle detalle posible.
-                             Quédate tranquilo, quedará segura con nosotros.`}</p>
+                             Quédate tranquilo, no se la diremos a nadie.`}</p>
                         </div>
                     </div>
                      <div className="about-content-item">
@@ -80,16 +80,16 @@ const AboutUs = ({language}) => {
                     <div className="about-content-item">
                         <div className="about-content-holder">
                             <img alt="" className="about-item-img" src={about2}/>
-                            <h3 className="about-item-title">{lang && lang === "EN" ?  "Quality development":"Desarrollo de calidad"}</h3>
+                            <h3 className="about-item-title">{lang && lang === "EN" ?  "Developing the product":"Desarrollamos el producto"}</h3>
                             <p className="about-item-text">{lang && lang === "EN" ? 
                             `We develop with the latest tools and technologies out there, essential in such a competitive market.`:
-                            `Desarrollamos con las últimas herramientas y teconologías que existen, fundamental en un mercado tan competitivo.`}</p>
+                            `Utilizamos las últimas herramientas y teconologías que existen, fundamental en un mercado tan competitivo.`}</p>
                         </div>
                     </div>
                      <div className="about-content-item">
                         <div className="about-content-holder">
                             <img alt="" className="about-item-img" src={about3}/>
-                            <h3 className="about-item-title">{lang && lang === "EN" ? "Launching the product":"Lanzamiento del producto"}</h3>
+                            <h3 className="about-item-title">{lang && lang === "EN" ? "Launching to the market":"Lanzamos al mercado"}</h3>
                             <p className="about-item-text">{lang && lang === "EN" ? 
                             `We accompany you in the launch and maintenance of the product. You will never be left alone.`:
                             `Te acompañamos en la etapa de lanzamiento y mantenimiento del producto. Nunca estarás solo.`}</p>
