@@ -46,10 +46,10 @@ const AboutUs = ({language}) => {
             <div className="about-cont-text">
                 <div className="about-cont-text-holder">
                     <p className="page-section-text">{lang && lang === "EN" ? "Services" : "Servicios"}</p>
-                    <p className="about-text">{lang && lang === "EN" ? "High performance": "Gran desempeño"}</p>
-                    <p className="about-text">{lang && lang === "EN" ? "and" : "en"} <span style={{color:"#33A5F7"}}>{lang && lang === "EN" ? "services": "servicios"}</span> {lang && lang === "EN" ? "for" : "para"}</p>
-                    <p className="about-text">{lang && lang === "EN" ? "it solutions" : "soluciones"}<span style={{color:"#33A5F7"}}>{lang && lang === "EN" && "."}</span></p>
-                    <p className="about-text">{lang && lang === "ES" && "tecnologicas"}<span style={{color:"#33A5F7"}}>{lang && lang === "ES" && "."}</span></p>
+                    <p className="about-text">{lang && lang === "EN" ? "We develop the": "Desarrollamos el "}</p>
+                    <p className="about-text"><span style={{color:"#33A5F7"}}>{lang && lang === "EN" ? "software": "software"}</span> {lang && lang === "EN" ? "and" : "y"} <span style={{color:"#33A5F7"}}>{lang && lang === "EN" ? "hardware": "hardware"}</span></p>
+                    <p className="about-text">{lang && lang === "EN" ? "that your project" : "que requiere tu"}</p>
+                    <p className="about-text">{lang && lang === "EN" ? "requires" : "proyecto"}<span style={{color:"#33A5F7"}}>{"."}</span></p>
 
                 </div>
             </div>
@@ -60,20 +60,19 @@ const AboutUs = ({language}) => {
                             <img  alt="" className="about-item-img" src={about1}/>
                             <h3 className="about-item-title">{lang && lang === "EN" ? "Knowing the idea" : "Conocemos la idea"}</h3>
                             <p className="about-item-text">{lang && lang === "EN" ? 
-                            `You tell us your idea, with
-                            full of details`:
-                            `Nos cuentas tu idea con el mayor detalle`}</p>
+                            `You tell us your idea, with full of details. Rest assured that your idea is safe with us.`:
+                            `Nos cuentas tu idea con el mayor detalle detalle posible.
+                             Quédate tranquilo, quedará segura con nosotros.`}</p>
                         </div>
                     </div>
                      <div className="about-content-item">
                         <div className="about-content-holder">
                             <img alt="" className="about-item-img" src={about4}/>
-                            <h3 className="about-item-title">{lang && lang === "EN" ? "Find the best team" : "Encontramos el mejor equipo"}</h3>
+                            <h3 className="about-item-title">{lang && lang === "EN" ? "Gathering the best team" : "Armamos el mejor equipo"}</h3>
                             <p className="about-item-text">{lang && lang === "EN" ? 
-                            `We bring you the best team
-                            to make true your idea`:
+                            `We bring you the best team that will accompany you throughout the project.`:
                             `Te traemos el mejor equipo
-                            que hará realidad tu idea`}</p>
+                            que te acompañará durante todo el proyecto.`}</p>
                         </div>
                     </div>
                 </div>
@@ -83,18 +82,17 @@ const AboutUs = ({language}) => {
                             <img alt="" className="about-item-img" src={about2}/>
                             <h3 className="about-item-title">{lang && lang === "EN" ?  "Quality development":"Desarrollo de calidad"}</h3>
                             <p className="about-item-text">{lang && lang === "EN" ? 
-                            `We make softwares with high
-                            quality and performance`:
-                            `Hacemos softwares con la
-                            mayor calidad y performance`}</p>
+                            `We develop with the latest tools and technologies out there, essential in such a competitive market.`:
+                            `Desarrollamos con las últimas herramientas y teconologías que existen, fundamental en un mercado tan competitivo.`}</p>
                         </div>
                     </div>
                      <div className="about-content-item">
                         <div className="about-content-holder">
                             <img alt="" className="about-item-img" src={about3}/>
-                            <h3 className="about-item-title">{lang && lang === "EN" ? "Performing product":"Productos performante"}</h3>
-                            <p className="about-item-text">You tell us your idea, with
-                            full of details</p>
+                            <h3 className="about-item-title">{lang && lang === "EN" ? "Launching the product":"Lanzamiento del producto"}</h3>
+                            <p className="about-item-text">{lang && lang === "EN" ? 
+                            `We accompany you in the launch and maintenance of the product. You will never be left alone.`:
+                            `Te acompañamos en la etapa de lanzamiento y mantenimiento del producto. Nunca estarás solo.`}</p>
                         </div>
                     </div>
                 </div>

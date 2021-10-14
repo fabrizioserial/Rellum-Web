@@ -24,12 +24,11 @@ const Home = ({language}) => {
                         <div className="home-text-info-cont" >
                             <p className="home-text-info">{
                             lang && lang === "EN" ? 
-                            `Rellüm software will transform your
+                            `Rellüm will transform your
                             ideas into robust and powerful
                             IT solutions.`:
-                            `En Rellüm software transformamos
-                            tus ideas en performantes
-                            soluciones tecnológicas.`}</p>
+                            `En Rellüm utilizamos la última
+                            tecnología en software y hardware para llevar a cabo tus proyectos.`}</p>
                         </div>
                     </div>
 

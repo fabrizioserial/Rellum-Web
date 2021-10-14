@@ -10,7 +10,8 @@
     transition: top 0.3s;
 }
 .gradient{
-    background-image: linear-gradient(#FFF, rgba(255, 255, 255, 0.432));
+    /*background-image: linear-gradient(#FFF, rgba(255, 255, 255, 0.432));*/
+    background: white;
 }
 .transparente{
     background: transparent;

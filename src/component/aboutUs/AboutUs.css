@@ -33,7 +33,7 @@
     flex-direction: column;
     justify-content: center;
     box-shadow: 5px 5px 25px rgba(201, 201, 201, 0.562);
-    cursor: pointer;
+    cursor:default;
 }
 .about-content-holder{
     width: 204px;

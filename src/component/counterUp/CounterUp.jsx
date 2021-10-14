@@ -46,7 +46,7 @@ const CounterUp = ({language}) => {
     return (
         <div id="projects" ref={reference} className="counter-clients-cont">
             <div className="counter-client-cont-val">
-                    <CountUp start={count ? 0 : null} end={20} duration={2} suffix={" +"} redraw={true}>
+                    <CountUp start={count ? 0 : null} end={18} duration={2} suffix={"+"} redraw={true}>
                         {({ countUpRef }) => (
                                 <span className="counter-clients-text" ref={countUpRef} />
                         )}
@@ -64,7 +64,7 @@ const CounterUp = ({language}) => {
                     <p className="counter-client-label">{lang && lang === "EN" ? "undertaking":"emprendiendo"}</p>
             </div>
             <div className="counter-client-cont-val">
-                    <CountUp start={count ? 0 : null} end={10} duration={2} suffix={" +"} redraw={true}>
+                    <CountUp start={count ? 0 : null} end={7} duration={2} suffix={"+"} redraw={true}>
                         {({ countUpRef }) => (
                                 <span className="counter-clients-text" ref={countUpRef} />
                         )}

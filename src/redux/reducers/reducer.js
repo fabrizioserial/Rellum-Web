@@ -2,7 +2,7 @@ import {SET_LANG} from '../actions/actions.js'
 
 
 const default_lang = {
-    language: "EN",
+    language: "ES",
 }
 
 const user_data = (state=default_lang , action) =>{

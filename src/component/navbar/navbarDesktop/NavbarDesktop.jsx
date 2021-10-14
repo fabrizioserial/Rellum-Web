@@ -32,7 +32,6 @@ const NavbarDesktop = ({language,setLanguage}) => {
 
     const handleSwitchLang = () =>{
         lang === "EN" ? setLanguage({language:"ES"}) : setLanguage({language:"EN"}) 
-        console.log("HOLA BB")
     }
 
     useEffect(()=>{
@@ -68,7 +67,7 @@ const NavbarDesktop = ({language,setLanguage}) => {
                     isDynamic={true}
                     ignoreCancelEvents={false}
                     className="navbar-item black"
-                    >{lang && lang === "EN" ? "Project" : "Proyectos"}</Link>
+                    >{lang && lang === "EN" ? "Projects" : "Proyectos"}</Link>
                 </div>
                 <div className="link-background">
                     <Link
@@ -82,7 +81,7 @@ const NavbarDesktop = ({language,setLanguage}) => {
                     isDynamic={true}
                     ignoreCancelEvents={false}
                     className="navbar-item black"
-                    >{lang && lang === "EN" ? "Contact us" : "Contactanos"}</Link>
+                    >{lang && lang === "EN" ? "Contact us" : "Contacto"}</Link>
                 </div>
                 <div>
                     <img alt="" style={{height:"20px",cursor:"pointer"}} onClick={handleSwitchLang} src={lang && lang === "EN" ? uk : sp}/>
