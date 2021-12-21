@@ -1,8 +1,8 @@
 import React,{useState,useRef,useEffect} from 'react'
 import './DevelopSection.css'
-import macbook from '../../../img/mackbook.png'
-import custome from '../../../img/custome.png'
-import mobile from '../../../img/iphone.png'
+import macbook from '../../../img/webdesign.png'
+import custome from '../../../img/hardwaredesign.png'
+import mobile from '../../../img/appdesign.png'
 
 export const DevelopSection = ({side,image,title,text1,text2,text3}) => {
     const referenceSection = useRef(null)

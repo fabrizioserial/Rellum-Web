@@ -10,27 +10,9 @@ const Home = ({language}) => {
     const getProjects = () =>{
         const MyProjects = [
             {
-                name:"Oncomedic",
+                name:"ID CARDS",
                 descriptionEN:"Oncomedic is a mobile app that helps people with cancer",
-                descriptionSP:"Oncomedic es una aplicacion movil que ayuda a gente con cancer",
-                imageUrl:"https://file.mk.co.kr/meet/neds/2020/10/image_readtop_2020_1077209_16032413334399433.jpg"
-            },
-            {
-                name:"Oncomedic",
-                descriptionEN:"Oncomedic is a mobile app that helps people with cancer",
-                descriptionSP:"Oncomedic es una aplicacion movil que ayuda a gente con cancer",
-                imageUrl:"https://file.mk.co.kr/meet/neds/2020/10/image_readtop_2020_1077209_16032413334399433.jpg"
-            },
-            {
-                name:"Oncomedic",
-                descriptionEN:"Oncomedic is a mobile app that helps people with cancer",
-                descriptionSP:"Oncomedic es una aplicacion movil que ayuda a gente con cancer",
-                imageUrl:"https://file.mk.co.kr/meet/neds/2020/10/image_readtop_2020_1077209_16032413334399433.jpg"
-            },
-            {
-                name:"Oncomedic",
-                descriptionEN:"Oncomedic is a mobile app that helps people with cancer",
-                descriptionSP:"Oncomedic es una aplicacion movil que ayuda a gente con cancer",
+                descriptionSP:"Una aplicación movil para que los usuario puedan guardar información personal de forma segura.",
                 imageUrl:"https://file.mk.co.kr/meet/neds/2020/10/image_readtop_2020_1077209_16032413334399433.jpg"
             },
             {

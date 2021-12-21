@@ -30,7 +30,9 @@ function App() {
               <AboutUs/>
               <CounterUp/>
               <Develop/>
-              
+              {/*
+              <Projects/>
+              */}
               <ConstactUs/>
               <Footer/>
             </Route>

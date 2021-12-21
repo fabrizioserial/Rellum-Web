@@ -55,7 +55,9 @@ const NavbarDesktop = ({language,setLanguage}) => {
                     className="navbar-item black"
                     >{lang && lang === "EN" ? "Services" : "Servicios"}</Link>
                 </div>
-                <div className="link-background">
+                {
+                    /*
+                    <div className="link-background">
                     <Link
                     activeClass="active"
                     to="projects"
@@ -69,6 +71,8 @@ const NavbarDesktop = ({language,setLanguage}) => {
                     className="navbar-item black"
                     >{lang && lang === "EN" ? "Projects" : "Proyectos"}</Link>
                 </div>
+                    */
+                }            
                 <div className="link-background">
                     <Link
                     activeClass="active"

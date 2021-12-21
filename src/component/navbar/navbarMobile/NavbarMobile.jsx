@@ -32,7 +32,12 @@ export const NavbarMobile = ({width}) => {
     return (
         <div className="navbar-mobile-cont whiteBack" style={visible? {top:0} : {top:"-250px"}}>
             <img className="navbar-mobile-logo" src={Logo_Long}/>
-            <img className="navbar-mobile-menu" src={barmenu} onClick={openMenu}/>
+            {
+                /*
+<img className="navbar-mobile-menu" src={barmenu} onClick={openMenu}/>
+                */
+            }
+            
             {menu && <MenuMobile/>}
         </div> 
     )

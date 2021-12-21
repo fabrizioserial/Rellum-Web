@@ -23,7 +23,11 @@ export const Navbar = () => {
         <>
         {
         (width < breakpoint) ?
+        
             <NavbarMobile width={width}/>
+            
+        
+            
         :
             <NavbarDesktop/>
         } 

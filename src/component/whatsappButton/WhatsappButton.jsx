@@ -10,7 +10,7 @@ const openInNewTab = (url) => {
 export const WhatsappButton = () => {
     return (
         <>
-            <img className="wpp-btn" src={wpp} onClick={() => openInNewTab("https://rellum.com.ar")}/> 
+            <img className="wpp-btn" src={wpp} onClick={() => openInNewTab("https://wa.me/+5491127497829")}/> 
         </>
     )
 }

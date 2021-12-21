@@ -47,6 +47,7 @@ const Footer = ({language}) => {
                     isDynamic={true}
                     ignoreCancelEvents={false}
                 >{lang && lang === "EN" ? "Services":"Servicios"}</Link>
+                {/*
                 <Link
                     activeClass="active"
                     to="project"
@@ -57,6 +58,7 @@ const Footer = ({language}) => {
                     isDynamic={true}
                     ignoreCancelEvents={false}
                 >{lang && lang === "EN" ? "Projects":"Proyectos"}</Link>
+                */}
                 <Link
                     activeClass="active"
                     to="contact"
