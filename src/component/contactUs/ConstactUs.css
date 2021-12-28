@@ -65,7 +65,7 @@
     font-size: 16px;
 }
 .contact-input-suffix{
-    width:80% !important;
+    width:84% !important;
 }
 .suffix{
     max-width: 20%;
@@ -116,7 +116,7 @@
 }
 .contact-input-submit{
     font-family: 'Poppins', sans-serif !important;
-    width: calc(90% + 20px);
+    width: 90%;
     height: 45px;
     background-color: var(--primary);
     border: none;

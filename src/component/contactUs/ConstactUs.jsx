@@ -2,9 +2,10 @@ import React,{useState,useEffect} from 'react'
 import './ConstactUs.css'
 import { connect } from 'react-redux'
 import emailjs from 'emailjs-com';
+import { withSnackbar } from '../snackbar/Snackbar';
 
 
-const ConstactUs = ({language}) => {
+const ConstactUs = ({language,showMessage}) => {
 
     const [message,SetMessage] = useState({to_name:"buchmuller.german@gmail.com",name:"",email:"",company:"",budget:"",text:"",img:"https://www.trecebits.com/wp-content/uploads/2020/02/meme-kid.jpg"})
     const [error, setError] = useState(false)
@@ -41,8 +42,10 @@ const ConstactUs = ({language}) => {
         emailjs.send('service_c67rg7f', 'template_p78g1be', message, 'user_4WxTwEtYrHSj1SjIPRsSo')
         .then((result) => {
             console.log(result.text);
+            showMessage("success", lang && lang === "EN" ? "Your message has been sent succesfully":"Tu mensaje ha sido enviado exitosamente!");
         }, (error) => {
           console.log(error.text);
+            showMessage("success", lang && lang === "EN" ? "Opss.. Something went wrong!":"Opss.. Algo salió mal");
         });
     }
 
@@ -104,4 +107,4 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps)(ConstactUs)
+export default connect(mapStateToProps)(withSnackbar(ConstactUs))

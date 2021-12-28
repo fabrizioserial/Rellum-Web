@@ -30,12 +30,15 @@ export const TrustUs = () => {
 
     return (
         <div className="trust-cont">
+            <div className='noToucheable'></div>
             <Slider {...{arrows: false,
                 autoplay: true,
                 autoplaySpeed: 2000,
                 pauseOnHover: false,
-                className: 'trust-slider'
-                ,slidesToShow: width < breakpoint ? 2 : width < 800 ? 4:6}}>
+                swipe: false,
+                className: 'trust-slider',
+                slidesToShow: width < breakpoint ? 2 : width < 800 ? 4:6}}
+                >
                 <img alt="" className="trust-logo" src={reactlogo}/>
                 <img alt="" className="trust-logo" src={flutterlogo}/>
                 <img alt="" className="trust-logo" src={awslogo}/>

@@ -54,6 +54,7 @@
     font-weight: 300;
     margin-top: 0px;
     margin-bottom: 0px;
+    width: 350px;
 }
 .dsection-title{
     font-size: 35px;
@@ -205,6 +206,9 @@
     }
     .dsection-cont{
         margin-top: 30px;
+    }
+    .dsection-text{
+        width: 280px;
     }
 }
 @media screen and (min-width:945px) and (max-width: 1024px) {

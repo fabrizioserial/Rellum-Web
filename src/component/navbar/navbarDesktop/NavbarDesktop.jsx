@@ -13,7 +13,7 @@ const NavbarDesktop = ({language,setLanguage}) => {
     
     const [prevScrollPos, setPrevScrollPos] = useState(0); 
     const [visible, setVisible] = useState(true);  
-    const [Color,setColor] = useState(false)
+    const [Color,setColor] = useState(true)
     const [lang,setLang] = useState(language)
 
 
@@ -39,7 +39,7 @@ const NavbarDesktop = ({language,setLanguage}) => {
     },[language])
 
     return (
-        <div className={!Color ?"navbar-cont gradient" : "navbar-cont transparente"} style={visible? {top:0} : {top:"-55px"}}>
+        <div className={Color ?"navbar-cont transparentes" : "navbar-cont gradient"} style={visible? {top:0} : {top:"-55px"}}>
             <img alt="" className="navbar-logo" src={Logo_Long}/>
             <div className="navbar-items-cont">
                 <div className="link-background">

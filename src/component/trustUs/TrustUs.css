@@ -1,7 +1,7 @@
 .trust-cont{
     width: 100%;
     color: white;
-    
+    position: relative;
 }
 .trust-logo{
     height: 80px;
@@ -12,6 +12,12 @@
 .trust-slider{
     margin-top: 20px;
     margin-bottom: 100px;
+}
+.noToucheable{
+    width: 100%;
+    z-index: 100;
+    position: absolute;
+    height: 100px;
 }
 
 @media screen and (max-width: 1070px) {

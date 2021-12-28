@@ -47,9 +47,10 @@ export const DevelopSection = ({side,image,title,text1,text2,text3}) => {
                 <div className="dsection-cont-text">
                     <div className={count ? "dsection-text-holder fade-in-image-left" : "hidden"}>
                         <p className="dsection-title">{title}</p>
-                        <p className="dsection-text">{text1}</p>
-                        <p className="dsection-text">{text2}</p>
-                        <p className="dsection-text">{text3}</p>
+                        <p className="dsection-text">{text1 + " " + text2 + " " + text3}</p>
+                        {
+                            /*<p className="dsection-text">{text2}</p>
+                        <p className="dsection-text">{text3}</p>*/}
                     </div>
                 </div>
             </div>
@@ -58,9 +59,7 @@ export const DevelopSection = ({side,image,title,text1,text2,text3}) => {
                 <div className="dsection-cont-text-der">
                     <div className={count ? "dsection-text-holder-der fade-in-image-left" : "hidden"}>
                         <p className="dsection-title">{title}</p>
-                        <p className="dsection-text">{text1}</p>
-                        <p className="dsection-text">{text2}</p>
-                        <p className="dsection-text">{text3}</p>
+                        <p className="dsection-text">{text1 + " " + text2 + " " + text3}</p>
                     </div>
                 </div>
                 <div className="dsection-cont-blue">

@@ -18,16 +18,11 @@ export const Navbar = () => {
         console.log(width)
     },[width])
     
-
     return (
         <>
         {
         (width < breakpoint) ?
-        
-            <NavbarMobile width={width}/>
-            
-        
-            
+            <NavbarMobile width={width}/>    
         :
             <NavbarDesktop/>
         } 
